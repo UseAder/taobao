@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="logo">
+				<h1>
+			    	<a href="javascript:;" title="淘宝网">
+				    	<i class="iconfont tb-logo-cn"></i>
+				    	<i class="iconfont tb-logo-url"></i>
+			    	</a>
+			    </h1>
+				<div class="login-msg" style="text-align: center;width: 880px; margin: 0 auto;border:1px solid #ffb4a8;">
+					<p class="error">
+						为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+					</p>
+				</div>
+				<a href="javascript:;" class="link">
+					<i class="iconfont"></i> "登录页面"改进建议
+				</a>
+			</div>
+		</header>
+		<nav>
+			<article>
+				<div class="article">
+					<div class="login-title">
+					
+					</div>
+					<form method="post" onsubmit="return false;">
+						<div id="J_Message" class="login-msg error">
+							<i class="iconfont"></i>
+							<p class="error">你输入的密码和账户名不匹配，是否<a href="https://passport.taobao.com/ac/password_find.htm?from_site=0&amp;login_id=ss&amp;lang=zh_CN&amp">忘记密码</a>或<a href="#" target="_blank">忘记会员名</a></p>
+			
+		    			 </div>
+						
+						<div class="from1">
+							<label for="TPL_username_1"> <i class="iconfont" title="会员名"></i></label>
+							<!--<span class="ph-label" style="z-index: 1;position: absolute;">会员名/邮箱/手机号</span>-->
+							<input type="text" name="TPL_username" style="z-index:332;" id="username" class="login-text J_UserName" value="" maxlength="32" tabindex="1" placeholder="！仅限用户名登录">
+						</div>
+						<div class="from2">
+							<label id="password-label" for="TPL_password_1"><i class="icon iconfont" title="登录密码"></i></label> 
+							
+				   			<input type="password" name="TPL_password" id="password" class="login-text" maxlength="40" tabindex="2" autocomplete="off" aria-label="登录密码">
+							
+						</div>
+						<input type="submit" class="J_Submit" tabindex="3" id="btn" data-ing="正在登录..." value="登入">
+					</form>
+					<aside>
+						<a href="javasript:;" class="weibo-login"><i class="iconfont"></i>微博登录</a>
+						<a href="javasript:;" class="alipay-login"><i class="iconfont"></i>支付宝登录</a>
+					</aside>
+					<div class="login-links">
+						<a href="javasript:;">忘记密码</a>				
+					<a href="javasript:;">忘记会员名</a>					
+						<a href="reg.html">免费注册</a>				
+					</div>
+				
+				</div>
+				
+				
+			</article>
+			
+		</nav>
+		
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+				$(document).ready(function(){//页面刷新可输入
+					$('#username').val(getCookie('UserName'));
+				})
+				$('#btn').on('click',function(){
+					var $username=$('#username').val();
+					var $password=$('#password').val();
+					$.ajax({
+						type:'post',
+						url:'php/login.php',
+						data:{//将用户名和密码传输给后端
+							name:$username,
+							pass:$password
+						},
+						success:function(data){//请求成功，接收后端返回的值
+							if(!data){//用户名或者密码错误
+								
+								$('#J_Message').show()
+								$('#password').val('');
+							}else{//成功
+								addCookie('UserName',$username,7);
+								location.href='taobao.html';
+							}
+						}
+					})
+				});
+		
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="css/cart.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/fixed.css"/>
+		<link rel="stylesheet" href="css/cart.css" />
+		<style type="text/css">
+			#container{
+				height: 1000px ;display:block
+			}
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<div id="container">
+			<div class="cart">
+        <div class="w">
+            <div class="empty-cart"><!--购物车为空时显示的那个盒子的状态-->
+                <div class="empty-cart-msg">
+                    购物车空空的哦~，去看看心仪的商品吧~
+                    <a href="taobao.html">去购物></a>
+                </div>
+            </div>
+           <div class="cart-top" style="display: block;"><!--挑选选中的物品-->
+                <div class="cart-top-left">
+                    <a href=""><em>全部商品</em></a>
+                </div>
+                <div class="cart-top-right">
+                    <span>配送至：</span>
+                    <div class="jdarea">
+                        <div class="areawrap">
+                            <div class="areatext">北京朝阳区三环到四环之间</div>
+                            <b></b>
+                        </div>
+                    </div>
+                </div>
+                <div class="footline">
+                    <div class="line"></div>
+                </div>
+            </div>
+           
+			<div class="cart-wrap" style="display: block;"><!--购物-->
+                <div class="w">
+                    <div id="jd-cart">
+                        <div class="cartmain">
+                            <div class="cart-thead">
+                                <div class="cart-col t-checkbox">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                    </div>
+                                </div>
+                                <div class="cart-col t-goods">商品</div>
+                                <div class="cart-col t-props"></div>
+                                <div class="cart-col t-prices">单价(元)</div>
+                                <div class="cart-col t-quantity">数量</div>
+                                <div class="cart-col t-sum">小计(元)</div>
+                                <div class="cart-col t-action">操作</div>
+                            </div>
+                            <div id="cart-list">
+                                <div class="cart-item-list">
+                                    <div class="cart-tbody">
+                                        <div class="shop">
+                                            <div class="cart-checkbox">
+                                                <input type="checkbox" checked="" name="" id="" value="" />
+                                            </div>
+                                            <span class="shop-info">
+													<a href=""></a>
+												</span>
+                                            <div class="shop-ex">
+                                                购满￥99.00 已免运费
+                                                <span class="tips-icon" data-tips="部分超重超大商品运费单独收取，不在本功能范围内，准确运费以结算页为准"></span>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="item-head">
+                                                <div class="headerr-left">
+                                                    <a class="headerr-left-p1" href="">
+                                                        <span>
+																换购
+																<b></b>
+															</span> 活动商品已购满999.00元，可加价换购商品10件>
+                                                    </a>
+                                                    <a class="headerr-left-p2" href="">换购商品</a>
+                                                    <a href="">去凑单 ></a>
+                                                </div>
+                                                <div class="headerr-price">
+                                                    <b></b>
+                                                </div>
+                                            </div>
+                                            
+                                            <!--核心start-->
+                                            <div class="goods-item goods-item-sele" style="display: none;">
+                                                <div class="goods-info">
+                                                    <div class="cell b-checkbox">
+                                                        <div class="cart-checkbox">
+                                                            <input type="checkbox" checked="" name="" id="" value="" />
+                                                            <span class="line-circle"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-goods">
+                                                        <div class="goods-name">
+                                                            <div class="goods-pic">
+                                                                <a href=""><img src="taobao.html" alt="" /></a>
+                                                            </div>
+                                                            <div class="goods-msg">
+                                                                <div class="goods-d-info">
+                                                                    <a href="javascript:;">Apple iMac 27英寸一体机（Core i5 处理器/8GB内存/1TB存储/2GB独显/Retina 5K屏 MK462CH/A）</a>
+                                                                </div>
+                                                                <div class="goods-ex">
+                                                                    <span class="promise"></span>
+                                                                    <span class="promise">
+																			<i></i><a href="">购买京东服务</a>
+																		</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-props">
+                                                        <div class="prop-text">尺码：27英寸Retina 5K 显示屏</div>
+                                                    </div>
+                                                    <div class="cell b-price">
+                                                        <strong>13488.00</strong>
+                                                        <a class="sales-promotion" href="">
+																促销优惠
+																<b></b>
+															</a>
+                                                        <div class="sales-promotion-dropdown">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-quantity">
+                                                        <div class="quantity-form">
+                                                            <a class="quantity-down" href="javascript:void(0)">-</a>
+                                                            <input type="text" value="1" />
+                                                            <a class="quantity-add" href="javascript:void(0)">+</a>
+                                                        </div>
+                                                        <div class="quantity-text">有货</div>
+                                                    </div>
+                                                    <div class="cell b-sum">
+                                                        <strong>13488.00</strong>
+                                                    </div>
+                                                    <div class="cell b-action">
+                                                        <a href="javascript:void(0)">删除</a><a href="javascript:void(0)">移到我的关注</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+											<!--核心end-->
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cart-floatbar">
+                        <div class="select-all">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                            </div>
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:void(0)">删除选中的商品</a><a href="javascript:void(0)">移到我的关注</a>
+                        </div>
+                        <div class="toolbar-right">
+                            <div class="btn-area">
+                                <a href="#" sid='1'>结算</a>
+                            </div>
+                            <div class="price-sum">
+                                <span class="txt">总价（不含运费）：</span>
+                                <span class="totalprice">￥0.00</span>
+                                <span class="txt">已节省：</span>
+                                <span class="totalsave">-￥0.00</span>
+                            </div>
+                            <div class="amount-sum">
+                                已选择
+                                <em>1</em> 件商品
+                                <b></b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--推荐商品start-->
+            <div class="goods-list goods-selected">
+                <ul>
+                	
+                </ul>
+            </div>
+            <!--推荐商品end-->
+        </div>
+   
+    
+    </div>
+    
+		</div>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fixed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+			$('.btn-area').on('click','a',function(){
+				if(getCookie('UserName')){//判断名字的cookie是否纯在
+					alert('购买成功')
+				} else{
+					alert('如欲购买，请先登入')
+					location.href="login.html";
+				}
+			})
+	</script>
+	</body>
+</html>

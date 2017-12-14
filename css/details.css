@@ -1,0 +1,258 @@
+
+.site-nav .site-nav-icon {
+  font-family: global-iconfont;
+  font-size: 12px;
+  font-style: normal;
+  margin-top: -3px\9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscaleFont type;
+  margin-right: 5px;
+  _line-height: 33px;
+  color: #9c9c9c; }
+
+.selected {
+  padding: 0;
+  font-weight: 700;
+  border-bottom: 2px solid #F40; }
+
+.site-nav .site-nav-icon-highlight {
+  color: #f40; }
+
+#main {
+  position: relative;
+  margin: 10px auto 0;
+  width: 1138px;
+  color: #3C3C3C;
+  height: 591px;
+  margin-bottom: 20px;
+  border: 1px solid #E8E8E8;
+  overflow: hidden; }
+
+.main-left {
+  width: 940px;
+  float: left;
+  height: 591px;
+  border-right: 1px solid #E8E8E8; }
+  .main-left .main-left-o {
+    float: left;
+    padding: 20px 0 20px 20px;
+    width: 400px;
+    position: relative;
+    height: 509px; }
+    .main-left .main-left-o .main-left-o-shang {
+      margin-bottom: 18px;
+      width: 400px; }
+    .main-left .main-left-o .main-left-o-xia {
+      float: left;
+      position: relative;
+      margin-right: 25px;
+      height: 22px;
+      line-height: 22px; }
+      .main-left .main-left-o .main-left-o-xia i {
+        background-position: -120px 0;
+        float: left;
+        margin: 4px 5px 0 0;
+        width: 16px;
+        height: 16px;
+        background: url(//gtms04.alicdn.com/tps/i4/TB1DYk6LVXXXXXIXVXXoj7wNVXX-400-340.png); }
+  .main-left .main-left-l {
+    float: left;
+    padding: 0 20px 20px 18px;
+    width: 480px;
+    height: 571px; }
+    .main-left .main-left-l img {
+      display: initial; }
+    .main-left .main-left-l h3 {
+      padding: 20px 0 10px !important;
+      min-height: 21px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21px;
+      color: #3C3C3C; }
+    .main-left .main-left-l .input-m {
+      margin: 10px 0 0 11px;
+      width: 469px;
+      height: 144px; }
+      .main-left .main-left-l .input-m .input-shang a {
+        border: 1px solid #fff;
+        display: inline-flex;
+        display: inline-flex; }
+        .main-left .main-left-l .input-m .input-shang a:hover {
+          border: 1px solid red; }
+      .main-left .main-left-l .input-m .input-xia {
+        height: 40px;
+        margin-bottom: 30px; }
+      .main-left .main-left-l .input-m .input-xia a.xia-a1 {
+        color: #E5511D;
+        border-color: #F0CAB6;
+        background: #FFE4D0; }
+      .main-left .main-left-l .input-m .input-xia a.xia-a2 {
+        position: relative;
+        width: 180px;
+        color: #FFF;
+        border-color: #F40;
+        background: #F40; }
+      .main-left .main-left-l .input-m .input-xia a {
+        color: #E5511D;
+        border-color: #F0CAB6;
+        background: #FFE4D0;
+        display: inline-block;
+        cursor: pointer;
+        width: 134px;
+        height: 38px;
+        text-align: center;
+        font-family: "Hiragino Sans GB","microsoft yahei",sans-serif;
+        font-size: 16px;
+        line-height: 38px;
+        border-width: 1px;
+        border-style: solid;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
+      .main-left .main-left-l .input-m .input-xia a:hover {
+        background: #ff0036; }
+      .main-left .main-left-l .input-m .input-center {
+        margin: 20px 0;
+        height: 28px; }
+        .main-left .main-left-l .input-m .input-center #input {
+          margin: 0;
+          padding: 0;
+          width: 48px;
+          height: 26px;
+          font-size: 16px;
+          line-height: 26px;
+          text-align: center;
+          color: #666;
+          border: 1px solid #CCC;
+          outline: 0;
+          background: #FFF; }
+        .main-left .main-left-l .input-m .input-center a {
+          width: 26px;
+          height: 26px;
+          border: 1px solid #ccc;
+          line-height: 26px;
+          padding: 0;
+          vertical-align: top;
+          overflow: hidden;
+          text-align: center;
+          background-color: #ededed;
+          overflow: hidden;
+          text-align: center; }
+
+span {
+  color: #6C6C6C;
+  display: inline-block; }
+
+.shang-shang {
+  width: 400px;
+  height: 400px;
+  background: #f7f7f7;
+  overflow: hidden;
+  position: absolute;
+  margin-bottom: 15px;
+  z-index: 1; }
+  .shang-shang img {
+    height: 400px;
+    width: 100%; }
+
+#bf {
+  width: 400px;
+  height: 400px;
+  background: red;
+  overflow: hidden;
+  position: absolute;
+  left: 430px;
+  display: none; }
+
+#bf img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px; }
+
+.shang-center {
+  position: absolute;
+  bottom: 60px; }
+
+#xiaotu {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  right: 0;
+  width: 216px;
+  height: 216px;
+  background: url(//gtms01.alicdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png) repeat scroll 0 0 transparent;
+  cursor: move;
+  z-index: 1;
+  font-size: 0; }
+
+ul.shang-ul {
+  display: block; }
+  ul.shang-ul li {
+    display: inline;
+    float: left;
+    margin-right: 9px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    background: khaki; }
+    ul.shang-ul li:hover {
+      border: 2px solid #f40; }
+    ul.shang-ul li img {
+      max-width: 50px;
+      max-height: 50px; }
+
+a {
+  display: inline-block; }
+
+img {
+  border: 0; }
+
+.tb-iconfont {
+  font-family: tb-iconfont !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscaleFont type;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.ho {
+  border: 1px solid #f40; }
+
+.main-right {
+  margin: 8px auto;
+  float: right;
+  height: 550px;
+  width: 170px; }
+  .main-right a {
+    width: 140px;
+    height: 140px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 0px 20px 0; }
+    .main-right a img {
+      width: 140px;
+      height: 140px; }
+
+.tuijian-label {
+  margin: 10px 0 10px 0;
+  width: 140px;
+  color: #9b9b9b;
+  font-weight: 200;
+  font-family: tahoma,arial,"microsoft yahei"; }
+
+.tuijian-label-line {
+  display: inline-block;
+  zoom: 1;
+  border-top: 1px solid #d8d8d8;
+  width: 86px;
+  height: 0;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=details.css.map */

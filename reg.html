@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		
+*{font-family:"微软雅黑","黑体","宋体";color:#333;}
+a{color:#069;}
+body{margin:0;padding:0;background:url("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1754096206,3832588025&fm=200&gp=0.jpg") no-repeat;background-size: 100%;}
+.form-bak{width:800px;height:400px;margin:40px auto;background:#eee;border-radius:10px;box-shadow:0 2px 8px #999;}
+.left{float:left;width:500px;height:400px;}
+.line{width:100%;height:80px;margin:16px 0 0 0;}
+.info{float:left;height:100%;width:200px;}
+.info strong, .info span{display:block;text-align:right;}
+.info strong{font-size:24px;line-height:36px;margin-top:10px;color:#333;}
+.info span{font-size:12px;line-height:24px;color:#666;font-family:"微软雅黑","宋体";}
+.input input{background:none;border:none;outline:none;font-size:18px;line-height:40px;height:40px;width:240px;padding:9px 0 9px 9px;border-radius:10px;}
+.input{float:right;width:278px;height:58px;background:#f6f6f6;border:1px solid #999;border-radius:10px;box-shadow:inset 0 2px 5px #999;margin:10px 0;position:relative;}
+.error,.corect{height:20px;width:20px;position:absolute;top:19px;right:9px;}
+.error span{display:block;position:absolute;top:30px;right:20px;background:#fcc;border:1px solid #f33;font-size:12px;line-height:16px;color:#600;padding:6px 10px 4px 10px;border-radius:5px;opacity:.8;white-space:nowrap;overflow:hidden;}
+.corect{background-position:0 0;}
+.corect span{display:none;}
+.none{display:none;}
+
+.right{float:right;width:260px;height:360px;margin:20px 0 0 0;border-left:1px solid #ccc;}
+input[type=submit]{background:none;border:none;outline:none;margin:0;padding:0;cursor:pointer;
+font-size:40px;height:200px;width:200px;background:#369;margin:20px 30px 0 30px;color:#eee;}
+input[type=submit]:disabled{background:#999;cursor:no-drop;}
+.right div{margin:0 30px;width:200px;height:30px;line-height:30px;text-align:center;}
+.readagreement-wrap{margin:20px 30px!important;outline:1px solid #f99;}
+
+#top h1{font-size:30px;line-height:40px;padding:10px;text-align:center;}
+.agreement,#top{width:800px;margin:70px auto;background:#eee;border-radius:10px;box-shadow:0 2px 8px #999;text-align:center;}
+.agreement h1{display:block;font-size:24px;line-height:30px;padding:20px 20px 10px 20px;margin:0;color:#333;text-align:center;}
+.agreement iframe{width:760px;min-height:400px;margin:0 20px 20px 20px;border:none;outline:none;}
+.agreement .backtotop{display:block;line-height:20px;padding:10px;text-align:center;}
+</style>
+	<body>
+			
+	<div id="top"><h1>用户注册</h1></div>
+
+	<div class="form-bak">
+		<form action="php/register.php" method="post">
+			<div class="left">
+				<div class="line" id="line_account">
+					<div class="info">
+						<strong>邮箱</strong>
+						<span class="tips">邮箱就是账号</span>
+					</div>
+					<div class="input">
+						<input type="text" name="email" id="email"/>
+						<span>
+							
+						</span>
+						<div class="none"><span></span></div>
+					</div>
+				</div>
+			
+				<div class="line" id="line_name">
+					<div class="info">
+						<strong>用户名</strong>
+						
+						<span class="tips">只能由数字、文字或下划线组成<br />最多32个字符</span>
+					</div>
+					<div class="input">
+					<input type="text" name="name" id="username"/>
+						<span></span>
+						
+						<div class="none"><span></span></div>
+					</div>
+				</div>
+				
+			<div class="line" id="line_password">
+				<div class="info">
+					<strong>密码</strong>
+					<span class="tips">6至16个字符</span>
+				</div>
+				<div class="input">
+					<input type="password" name="password" id="password"/>
+					<span></span>
+					
+					<div class="none"><span></span></div>
+				</div>
+			</div>
+			
+			<div class="line" id="line_repeat">
+				<div class="info">
+					<strong>确认密码</strong>
+					<span class="tips">再次输入密码</span>
+				</div>
+				<div class="input">
+					<input type="password" name="repass" id="repass"/>
+					<span>
+					
+					</span>
+					<div class="none"><span></span></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="right">
+			<input type="submit" value="完成注册" name="submit" />
+			<div class="readagreement-wrap">
+				<input type="checkbox" name="agree" id="agree" checked=''>
+				同意《<a id="readagreement" href="#agreement"  title="查看用户使用协议">用户使用协议</a>》
+			</div>
+			<div>已经拥有账号，<a href="login.html">直接登录</a></div>
+			<div>忘记密码，<a href="#">请联系管理员</a></div>
+		</div>
+	</form>
+</div>
+
+<div id="agreement" class="agreement" style="display:none;">
+	<h1>用户使用协议</h1>
+	<iframe src=""></iframe>
+	<input type="button" value="同意" onclick="agree();"/>
+	<a href="#" class="backtotop" >返回顶部</a>
+</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var bstop=true;//不通过
+				var bstop1=true;
+				var bstop2=true;
+				var bstop3=true;
+				var bstop4=false;
+				var usereg=/^([\u4e00-\u9fa5]|[a-zA-Z0-9\_\-]){3,15}$/;
+				var RegEmail = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+				
+				$('#username').on('input',function(){
+					var username=$(this).val();
+					if(username!=''){
+						if(usereg.test(username)){
+							$.ajax({
+								type:'post',
+								url:'php/register.php',
+								data:{
+									name:username
+								},
+								success:function(data){
+									
+									if(!data){
+										$('#username').next('span').css('color','green').html('√');
+										bstop=false;
+									}else{
+										$('#username').next('span').css('color','red').html('该用户名已经存在');
+										bstop=true;
+									}
+								}
+							})
+						}else{
+							$(this).next('span').css('color','red').html('格式不正确');
+							bstop=true;
+						}
+					}else{
+						$(this).next('span').css('color','red').html('用户名不能为空');
+						bstop=true;
+					}
+				});
+////										
+				$('#email').on('input',function(){
+					var email=$(this).val();
+					if(email!=''){
+						if(RegEmail.test(email)){
+							$.ajax({
+								type:'post',
+								url:'php/register.php',
+								data:{
+									emai:email
+								},
+								success:function(data){
+									if(!data){
+										$('#email').next('span').css('color','green').html('√');
+										bstop1=false;
+									}else{
+										$('#email').next('span').css('color','red').html('该邮箱已经存在');
+										bstop1=true;
+									}
+								}
+							})
+						}else{
+							$(this).next('span').css('color','red').html('邮箱格式不正确');
+							bstop1=true;
+						}
+					}else{
+						$(this).next('span').css('color','red').html('邮箱不能为空');
+						bstop1=true;
+					}				
+				});
+							
+				$('#password').on('input',function(){
+					var password=$(this).val();
+					if(password!=''){
+								if(password.length<6) {
+									$(this).next('span').css('color','red').html('密码长度不够');
+														bstop2=true;
+								}else{
+									$(this).next('span').css('color','green').html('√');
+										bstop2=false;
+									if(password.length>16){
+										$(this).next('span').css('color','red').html('密码长度必需小于16px');
+										bstop2=true;
+									}
+								}
+						}else{
+						$(this).next('span').css('color','red').html('请输出密码');
+						bstop2=true;
+					}				
+				});
+										
+				$('#repass').on('input',function(){
+					var repass=$(this).val();
+					if(repass!=''){
+						if($("#password").val()!=repass) {
+									$(this).next('span').css('color','red').html('密码不一致');
+														bstop3=true;
+								
+						}else{
+						$(this).next('span').css('color','green').html('√');
+										bstop3=false;
+									}
+					}else{
+						$(this).next('span').css('color','red').html('请再次输出密码');
+						bstop3=true;
+					}						
+				});	
+				
+//				$(document).ready(function(){//页面刷新可输入
+//					$('#agree').attr('checked',false)
+//				});	
+				$('#agree').on('change',function(){
+					if($('#agree').prop('checked')==true){
+						bstop4=false;
+					}
+					else{
+						bstop4=true;
+					}
+					
+				});
+				$('form').on('submit',function(){
+				if(bstop1||bstop||bstop2||bstop3||bstop4){
+					return false;//阻止按钮跳转。
+				}else{
+						addCookie('UserName',$("#username").val(),7)
+				}
+				});
+			});
+		
+		</script>
+	</body>
+</html>
